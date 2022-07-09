@@ -5,10 +5,10 @@ const App = () => {
   const [size, setSize] = useState(8);
   return (
     <>
-      <Slider value={size} onChange={(value) => setSize(value)} />
+      <Slider value={size} onChange={(value) => setSize(value)}/>
       <br />
       <br />
-      <Space size={size} >
+      <Space size={size} wrap>
         <Button type="primary">Primary</Button>
         <Button>Default</Button>
         <Button type="dashed">Dashed</Button>
